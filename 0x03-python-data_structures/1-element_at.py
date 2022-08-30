@@ -1,12 +1,8 @@
 #!/usr/bin/python3
 
 
-# replaces all occurences of an element by another.
-def search_replace(my_list, search, replace):
-    new_list = []
-    for i in my_list:
-        if i == search:
-            new_list.append(replace)
-        else:
-            new_list.append(i)
-    return new_list
+# Function retrieves an elemnt from the liist
+def element_at(my_list, idx):
+    if idx < 0 or idx >= len(my_list):
+        return
+    return my_list[idx]

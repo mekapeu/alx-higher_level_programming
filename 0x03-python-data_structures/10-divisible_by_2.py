@@ -1,14 +1,11 @@
 #!/usr/bin/python3
 
 
-# best_score - retuns a key with the biggest integer value
-def best_score(a_dictionary):
-    if a_dictionary:
-        dlist = list(a_dictionary)
-        largK = dlist[0]
-        for i in dlist:
-            if a_dictionary[largK] < a_dictionary[i]:
-                largK = i
-        return largK
-    else:
-        return
+def divisible_by_2(my_list=[]):
+    new_l = my_list.copy()
+    for i in range(0, len(my_list)):
+        if my_list[i] % 2 == 0:
+            new_l[i] = 1
+        else:
+            new_l[i] = 0
+    return new_l

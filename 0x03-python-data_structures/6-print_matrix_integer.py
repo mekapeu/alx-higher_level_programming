@@ -1,8 +1,13 @@
 #!/usr/bin/python3
 
 
-# print_sorted_dictionary - prints a dictionary by ordered keys
-def print_sorted_dictionary(a_dictionary):
-    sortList = sorted(a_dictionary.keys())
-    for k in sortList:
-        print("{:s}: {}".format(k, a_dictionary[k]))
+def print_matrix_integer(matrix=[[]]):
+    if matrix:
+        for i in range(0, len(matrix)):
+            for j in range(0, len(matrix[i])):
+                if j != len(matrix[i]) - 1:
+                    print("{:d}".format(matrix[i][j]), end=" ")
+                else:
+                    print("{:d}".format(matrix[i][j]))
+    else:
+        print()

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 
-# number_keys - returns the number of keys in a dictionary
-def number_keys(a_dictionary):
-    return (len(a_dictionary.keys()))
+def no_c(my_string):
+    new_s = my_string.translate({ord('c'): None})
+    new_s = new_s.translate({ord('C'): None})
+    return new_s
