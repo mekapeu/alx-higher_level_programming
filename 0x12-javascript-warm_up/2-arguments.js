@@ -1,14 +1,10 @@
-
 #!/usr/bin/node
-
-// Script that prints "JavaScript is amazing".
+// Prints a message depending of the number of arguments passed
 
 if (process.argv.length === 2) {
   console.log('No argument');
-}
-if (process.argv.length === 3) {
+} else if (process.argv.length === 3) {
   console.log('Argument found');
-}
-if (process.argv.length > 3) {
+} else {
   console.log('Arguments found');
 }
